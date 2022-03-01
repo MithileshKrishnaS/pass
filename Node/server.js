@@ -27,7 +27,7 @@ app.use(cors(
 var con = mysql.createConnection({
     host: "SG-mysql-5758-mysql-master.servers.mongodirector.com",
     user: "sgroot",
-    password: "",
+    password: "CS3U5,XdhoWqXP8G",
     database:"mysql1"
 });
 
@@ -132,7 +132,7 @@ app.post('/savePass', function(req, res){
     const hash=crypto.AES.encrypt(req.body.password, 'qwertyuiop').toString();
     var bytes  = crypto.AES.decrypt(hash, 'qwertyuiop');
     var originalText = bytes.toString(crypto.enc.Utf8);
-    let sql="INSERT INTO userpass (keyName,website,password) VALUES ('"+req.body.keyName+"',"+"'"+req.body.website+"',"+"'"+hash+"');"
+    let sql=`INSERT INTO userpass (keyName,website,password) VALUES ('${req.body.keyName}', '${req.body.website}', '${hash}')`
     con.query(sql,(err,result)=>{
         if (err) throw err
         let sql='SELECT * FROM userpass';
@@ -150,7 +150,7 @@ app.post('/savePass', function(req, res){
 //delete
 app.post('/deleteItem', function(req, res){
     var data=req.body;
-    let sql="DELETE FROM userpass WHERE keyName = '"+data.key+"' AND website = '"+data.name+"'";
+    let sql=`DELETE FROM userpass WHERE keyName = ${data.key} AND website = ${data.name};`
     con.query(sql,data,(err,result)=>{
         if (err) throw err
         res.send("data removed");
