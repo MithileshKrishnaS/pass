@@ -1,0 +1,252 @@
+body{
+    font-family: 'Sora', sans-serif;
+}
+
+.htop{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.hright{
+    margin: 2%;
+    height: 96vh;
+    background-image: url('../images/fluid1.jpg');
+    background-size: cover;
+    border-radius: 1em;
+}
+
+.hr1{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bolder;
+    margin: 40% 5% 15% 5%;
+}
+
+.hname{
+    color: rgb(216, 35, 35);
+    font-size: 120%;
+}
+
+.hheader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5em;
+}
+
+.hheader>h1{
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hheader>img{
+    margin-left: 90%;
+    margin-top: 5%;
+    width: 60px;
+    height: 60px; 
+}
+.hl1{
+    margin: 5%;
+    padding: 5% 5% 10% 5%;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 1em;
+    box-shadow: 30px 30px 60px 30px rgba(0, 0, 0, 0.2), 15px 15px 40px 15px rgba(0, 0, 0, 0.19);
+}
+
+.hl11{
+    font-size: 200%;
+    text-align: justify;
+    font-weight: bolder;
+}
+
+.hl12{
+    color: rgb(94, 91, 91);
+}
+
+.space{   
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+    margin-top:10px;
+    color: rgb(5, 5, 5);
+    background-image: radial-gradient(rgb(13, 13, 14) 3px, transparent 0);
+    background-size: 50px 50px;
+    height: 20vh;
+}
+
+.main{
+    color: white;
+    background-color: black;
+    height: 50vh;
+    padding: 1%;
+}
+
+.main>h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.m1,.rm11{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rm1>input{
+    width: 30vw;
+    padding: 1% 3% 1% 3%;
+    height: 3vh;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+}
+
+.userinp{
+    width: 30vw;
+    padding: 1%;
+    height: 2vh;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    margin-left: 30%;
+}
+
+.rm11>a{
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    font-size: 130%;
+}
+
+.rm11>button{
+    background-color: white;
+    width: 10vw;
+    height: 5vh;
+    border: transparent;
+    border-radius: 1em;
+    font-size: 22px;
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rm11>button:hover{
+    background-color: rgb(161, 159, 156);
+}
+
+.key{
+    margin-left: 10%;
+    height: 150px;
+    width: 400px;
+}
+
+.nolog{
+    color: red;
+}
+
+.kheader{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+.kheader>img{
+    width: 60px;
+    height: 60px;
+    margin-left: 90%;
+    margin-top: 4%;
+}
+
+.kheader>h1{
+    text-align: left;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.note{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: red;
+    color: white;
+    font-size: 1.2em;
+}
+
+.genkey{
+    margin: 2% 20% 2% 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.genkey1,.genkey2,.userbtn{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(14, 14, 230);
+    color: white;
+    border: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+}
+
+.userbtn{
+    margin-left : 54%;
+    font-size: 1.2em;
+}
+
+.userbtn:hover{
+    background-color: tomato;
+}
+
+.genkey2{
+    margin-left: 72%;
+}
+
+.genkey1:hover,.genkey2:hover{
+    background-color: tomato;
+}
+
+.kh2,.keyvalue{
+    margin: 2% 20% 2% 20%;
+}
+
+.keyvalue{
+    padding:25px 15px 0 15px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    margin-top: -25px;
+    height: 5vh;
+}
+
+.icons{
+    background-color: white;
+    border: transparent;
+    cursor: pointer;
+}
+
+.usergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.eachpass{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: 5% 20% 5% 20%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 2%;
+
+}
+
+.each-btn{
+    /* text-align: center; */
+    margin-left: 25%;
+}
+
+.eachweb{
+    font-size: 25px;
+}
